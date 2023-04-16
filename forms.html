@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Demo</title>
+</head>
+<body>
+  <h1>Forms Demo</h1>
+
+  <button>form dışı</button>
+  
+  <form action="/food">
+<button type="button">Lütfen bu formu gönderme!</button>
+
+    <label for="kadi">Kullanıcı adı</label>
+    <input type="text" id="kadi"placeholder="kullanıcı adı" name="username">
+    <label for="sifre">Şifrenizi giriniz</label>
+    <input type="password" id="sifre" placeholder="şifre" name="password">
+
+    <button>Gönder</button>
+
+    <label for="renk">Renk Seçiniz</label>
+    <input id="renk" type="color" name="renk">
+    <label for="yas">Yaşınız</label>
+    <input id="yas" type="number">
+    
+   <button>Gönder</button>
+    
+  </form>
+  <hr>
+  <br>
+  <!-- GOOGLEDA ARAMA -->
+  <form action="https://www.google.com/search">
+    <label for="arama">Google üzerinde ara</label>
+    <input type="text" id="arama" name="q">
+    <button>Google</button>
+
+  </form>
+
+  <h2>Daha fazla input çeşidi</h2>
+  <form action="/birds">
+
+<input type="checkbox" name="tos" id="agree" checked>
+<label for="agree">Kabul ediyorum</label>
+<p>
+  <!-- RADIO BUTTON -->
+
+<label for="xs">XS</label>
+<input type="radio" name="size" id="xs" value="xs">
+<label for="s">S</label>
+<input type="radio" name="size" id="s" value="s">
+<label for="m">M</label>
+<input type="radio" name="size" id="m" value="m">
+
+</p>
+
+<P>
+<label for="animal">Favori Hayvanınızı seçin</label>
+<select name="animal" id="animal">
+<option value="balik">Balık</option>
+<option value="kus">Kuş</option>
+<option value="kedi">Kedi</option>
+
+</select>
+
+</P>
+
+<p>
+
+<label for="cheese"></label>
+<input type="range" name="peynir_miktari" id="cheese" min="1" max="100" step="7" value="75">
+  
+</p>
+
+<p>
+
+<label for="note">Özel istek</label><br>
+<textarea name="note" id="note" cols="20" rows="10" placeholder="İsteklerinizi bu kutucuğa yazabilirsiniz."></textarea>
+
+</p>
+<button>Yolla</button>
+
+  </form>
+
+  <h2>Validations</h2>
+  
+  <form action="/dummy">
+
+    <label for="first">İsim giriniz</label>
+    <input type="text" name="first" id="first" required minlength="3" maxlength="15">
+   <p>
+    <label for="">Url giriniz:</label>
+    <input type="url" name="" id="">
+   </p>
+    <p>
+      <label for="password">Şifre giriniz</label>
+    <input type="password" name="password" id="password" required>
+  </p>
+    
+    <button>Submit</button>
+
+
+  </form>
+
+</body>
+</html>
